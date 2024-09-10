@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -16,7 +16,7 @@ namespace HorionInjector
             var latest = new WebClient().DownloadString("https://horion.download/latest");
             if (Version.Parse(latest) > GetVersion())
             {
-                if (MessageBox.Show("New update available! Do you want to update now?", null, MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                if (MessageBox.Show("New update available! Dont update", null, MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                     Update();
             }
 

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -12,7 +12,7 @@
     <PackageProjectUrl>https://github.com/horionclient</PackageProjectUrl>
     <RepositoryType>GitHub</RepositoryType>
     <RepositoryUrl>https://github.com/horionclient/Injector</RepositoryUrl>
-    <Description>Injector for Horion, a Minecraft: Bedrock Edition utility mod</Description>
+    <Description>Injector for Borion, a Minecraft: Bedrock Edition utility mod</Description>
     <SignAssembly>false</SignAssembly>
     <Version>1.1.2</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

@@ -118,9 +118,11 @@ namespace HorionInjector
 
             SetStatus("downloading DLL");
             var wc = new WebClient();
+           
             var file = Path.Combine(Path.GetTempPath(), "Horion.dll");
-            wc.DownloadFileCompleted += (_, __) => Inject(file);
             wc.DownloadFileAsync(new Uri("https://github.com/Borion-Updated/Releases/releases/latest/download/Borion.dll"), file);
+            wc.DownloadFileCompleted += (_, __) => Inject(file);
+            
         }
 
         private void InjectButton_Right(object sender, MouseButtonEventArgs e)
